@@ -30,20 +30,31 @@ function App() {
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#documentation-icon"></use>
           </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                Learn more
-              </a>
-            </li>
-          </ul>
+          <h2>Contanos tu idea</h2>
+          <p>Dejanos tus datos y nos pondremos en contacto.</p>
+          <form className="contact-form">
+            <label className="contact-field">
+              Ingrese su nombre
+              <input type="text" name="nombre" autoComplete="given-name" required />
+            </label>
+            <label className="contact-field">
+              Ingrese su apellido
+              <input type="text" name="apellido" autoComplete="family-name" required />
+            </label>
+            <label className="contact-field">
+              Ingrese su e-mail
+              <input type="email" name="email" autoComplete="email" required />
+            </label>
+            <label className="contact-field">
+              Ingrese su numero telefonico
+              <input type="tel" name="telefono" autoComplete="tel" required />
+            </label>
+            <label className="idea-field">
+              Ingrese su idea innovadora
+              <textarea name="idea" rows="4" required></textarea>
+            </label>
+            <button type="submit">Enviar respuesta</button>
+          </form>
         </div>
         <div id="social">
           <svg className="icon" role="presentation" aria-hidden="true">
