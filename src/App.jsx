@@ -29,7 +29,7 @@ function App() {
 
       <div className="ticks"></div>
 
-      <section id="next-steps">
+      <section id="servicios">
         <div id="docs">
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#documentation-icon"></use>
@@ -109,7 +109,110 @@ function App() {
       </section>
 
       <div className="ticks"></div>
-      <section id="spacer"></section>
+
+      <footer className="site-footer">
+        <div className="footer-grid">
+          <div className="footer-brand">
+            <a className="footer-logo" href="#center">
+              fordevelopers
+            </a>
+            <p>
+              Desarrollo de software a medida y productos digitales para
+              empresas que necesitan tecnología sólida, clara y lista para
+              escalar.
+            </p>
+            <p className="footer-badge">Abiertos a nuevos proyectos</p>
+          </div>
+
+          <nav className="footer-col" aria-label="Estudio">
+            <h2>Estudio</h2>
+            <ul>
+              <li>
+                <a href="#center">Inicio</a>
+              </li>
+              <li>
+                <a href="#servicios">Servicios</a>
+              </li>
+              <li>
+                <a href="#docs">Recursos</a>
+              </li>
+              <li>
+                <a href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav className="footer-col" aria-label="Servicios">
+            <h2>Servicios</h2>
+            <ul>
+              <li>
+                <a href="#servicios">Desarrollo web</a>
+              </li>
+              <li>
+                <a href="#servicios">Apps a medida</a>
+              </li>
+              <li>
+                <a href="#servicios">Integraciones y APIs</a>
+              </li>
+              <li>
+                <a href="#servicios">Consultoría técnica</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div className="footer-col" id="contacto">
+            <h2>Contacto</h2>
+            <ul>
+              <li>
+                <a href="mailto:hola@fordevelopers.com">hola@fordevelopers.com</a>
+              </li>
+              <li>
+                <span>Trabajo remoto · LATAM</span>
+              </li>
+            </ul>
+            <div className="footer-social">
+              <a
+                href="https://github.com/vitejs/vite"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <svg className="button-icon" role="presentation" aria-hidden="true">
+                  <use href="/icons.svg#github-icon"></use>
+                </svg>
+              </a>
+              <a
+                href="https://x.com/vite_js"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+              >
+                <svg className="button-icon" role="presentation" aria-hidden="true">
+                  <use href="/icons.svg#x-icon"></use>
+                </svg>
+              </a>
+              <a
+                href="https://chat.vite.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Discord"
+              >
+                <svg className="button-icon" role="presentation" aria-hidden="true">
+                  <use href="/icons.svg#discord-icon"></use>
+                </svg>
+              </a>
+            </div>
+            <a className="footer-cta" href="mailto:hola@fordevelopers.com">
+              Hablemos de tu proyecto
+            </a>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          <p>© {new Date().getFullYear()} fordevelopers. Todos los derechos reservados.</p>
+          <p className="footer-note">Software a medida para equipos que quieren avanzar más rápido.</p>
+        </div>
+      </footer>
     </>
   )
 }
