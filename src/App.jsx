@@ -14,11 +14,9 @@ function App() {
             alt="Persona usando una computadora con alertas de inteligencia artificial"
           />
         </div>
-        <div>
+        <div className="why-us">
           <h1>fordevelopers</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
+          <p className="why-us-question">¿Por qué elegirnos?</p>
         </div>
         <button
           type="button"

@@ -65,6 +65,15 @@
   }
 }
 
+.why-us {
+  width: 100%;
+}
+
+.why-us-question {
+  font-size: 32px;
+  font-weight: 700;
+}
+
 #center {
   display: flex;
   flex-direction: column;
