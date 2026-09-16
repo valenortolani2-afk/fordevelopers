@@ -1,9 +1,6 @@
-import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <section id="center">
@@ -18,13 +15,12 @@ function App() {
           <h1>fordevelopers</h1>
           <p className="why-us-question">¿Por qué elegirnos?</p>
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
+        <p className="counter">
+          Somos una plataforma que desarrolla software a medida, abordando los
+          desafíos que implica desarrollar una idea innovadora. Trabajamos de
+          forma freelance, entregando proyectos eficientes en tiempo y forma,
+          con modificaciones adaptadas a cada detalle del cliente.
+        </p>
       </section>
 
       <div className="ticks"></div>
