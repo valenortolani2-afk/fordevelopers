@@ -11,13 +11,43 @@
   --accent-border: rgba(192, 132, 252, 0.45);
   --shadow:
     rgba(0, 0, 0, 0.45) 0 18px 40px -18px, rgba(0, 0, 0, 0.28) 0 8px 16px -8px;
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --header-h: 72px;
-  --container: min(1120px, calc(100% - 40px));
 
-  font: 18px/150% var(--sans);
-  letter-spacing: 0.16px;
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-md: 0.9375rem;
+  --text-base: 1.0625rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.125rem;
+  --display: 3rem;
+
+  --leading-tight: 1.16;
+  --leading-snug: 1.22;
+  --leading-body: 1.55;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3.5rem;
+  --space-8: 5.5rem;
+
+  --header-h: 72px;
+  --container: min(1120px, calc(100% - 48px));
+
+  font: var(--text-base) / var(--leading-body) var(--sans);
+  letter-spacing: 0.01em;
   color-scheme: dark;
   color: var(--text);
   background: var(--bg);
@@ -29,8 +59,10 @@
 
 @media (max-width: 1024px) {
   :root {
-    font-size: 16px;
     --header-h: 64px;
+    --container: min(1120px, calc(100% - 40px));
+    --display: 2rem;
+    --text-3xl: 1.75rem;
   }
 }
 
@@ -71,9 +103,9 @@ h1,
 h2,
 h3 {
   font-family: var(--heading);
-  font-weight: 600;
+  font-weight: var(--weight-semibold);
   color: var(--text-h);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.035em;
 }
 
 h1,
@@ -105,43 +137,37 @@ textarea {
 }
 
 .section {
-  padding: 88px 0;
-  scroll-margin-top: calc(var(--header-h) + 12px);
+  padding: var(--space-8) 0;
+  scroll-margin-top: calc(var(--header-h) + var(--space-3));
 }
 
 @media (max-width: 1024px) {
   .section {
-    padding: 64px 0;
+    padding: var(--space-7) 0;
   }
 }
 
 .section-kicker {
   display: inline-block;
-  margin-bottom: 12px;
+  margin-bottom: var(--space-4);
   color: var(--accent);
-  font-size: 13px;
-  font-weight: 600;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
 .section-title {
-  font-size: 36px;
-  line-height: 118%;
-  max-width: 18ch;
+  font-size: var(--text-3xl);
+  line-height: var(--leading-snug);
+  max-width: 28ch;
 }
 
 .section-lead {
-  margin-top: 12px;
-  max-width: 52ch;
+  margin-top: var(--space-5);
+  max-width: 50ch;
   color: var(--text);
-}
-
-@media (max-width: 1024px) {
-  .section-title {
-    font-size: 28px;
-    max-width: none;
-  }
+  line-height: var(--leading-body);
 }
 
 .btn {
@@ -153,8 +179,8 @@ textarea {
   border-radius: 10px;
   border: 1px solid transparent;
   text-decoration: none;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: var(--text-md);
+  font-weight: var(--weight-semibold);
   cursor: pointer;
   transition:
     transform 0.2s ease,
